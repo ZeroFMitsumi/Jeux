@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jeux</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/anim.css" />
+    <script src="jQuery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="jquery-test" class="panel">
+            <p class="on">jQuery est bien chargé dans cette page !</p>
+            <p class="off">jQuery n'est pas (encore) chargé dans cette page...</p>
+        </div>
+    </header>
+    <section id="panneauChoix">
+        <button class="un"><h3>Shifumi (textuelle)</h3></button>
+        <button class="deux"><h3>Jan-ken-pan</h3></button>
+        <button class="trois"><h3>Jan-Ken-Pan plus</h3></button>
+        <button class="quatre"><h3>Juste Prix (basique)</h3></button>
+        <button class="cinq"><h3>Juste Prix (stylisé)</h3></button>
+    </section>
+    <section class="retour">
+        <button class="btnRetour">Fermer le(s) Jeu(x)</button>
+    </section>
+    <section id="gamePage">
+        <!-- Overlay -->
+        <div class="mask"></div>
+        <div class="hG">
+            <!-- (css obligatoire) Position: absolute;  -->
+        </div>
+        <div class="hD">
+            <!-- (css obligatoire) Position: absolute;  -->
+        </div>
+        <div class="bD">
+            <!-- (css obligatoire) Position: absolute;  -->
+        </div>
+        <div class="bG">
+            <!-- (css obligatoire) Position: absolute;  -->
+        </div>
+
+        <!-- Jeux -->
+        <div class="shifumiJs">
+            <div class="resultat"></div>
+            <div class="shifuBtn">
+                <button>Pierre</button>
+                <button>Feuilles</button>
+                <button>Ciseaux</button>
+
+            </div>
+            <button class="puit">Puit</button>
+        </div>
+
+        <!-- Jan-ken-pan -->
+        <div class="shifumi">
+            <div class="resultats">
+                <div class="robot">
+                    <h3>Robot:</h3>
+                    <img class="screen bot" src="images/imageAdécouper0.png" alt="image du Pierre, feuille , ciseaux coter Robot" />
+                </div>
+                <div class="screenResult">
+                    <!-- Afficher victoire ou défaite ici -->
+                </div>
+                <div class="player">
+                    <img class="screen pone" src="images/imageAdécouper0.png" alt="image du Pierre, feuille , ciseaux coter Joueur" />
+                    <h3>Joueur:</h3>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="p">Pierre</button>
+                <button class="f">Feuilles</button>
+                <button class="c">Ciseaux</button>
+            </div>
+        </div>
+
+        <!-- Jan-ken-pan Lézard et spock -->
+
+        <div class="spock">
+            <div class="resultatsS">
+                <div class="robotS">
+                    <h3>Robot:</h3>
+                    <img class="screenS botS" src="images/pierre-logo_2-300x300.jpg" alt="image du Pierre, feuille , ciseaux, lezard et spock coter Robot" />
+                </div>
+                <div class="screenResultS">
+                    <!-- Afficher victoire ou défaite ici -->
+                </div>
+                <div class="playerS">
+                    <img class="screenS poneS" src="images/pierre-logo_2-300x300.jpg" alt="image du Pierre, feuille , ciseaux, lezard et spock coter Joueur" />
+                    <h3>Joueur:</h3>
+                </div>
+            </div>
+            <div class="btnS">
+                <button class="p">Pierre</button>
+                <button class="f">Feuilles</button>
+                <button class="c">Ciseaux</button>
+                <button class="l">Lézard</button>
+                <button class="s">Spock</button>
+            </div>
+        </div>
+
+        <!-- Juste prix ou plus ou moins version simple-->
+        <div class="justePrix">
+            <!-- Juste prix ou plus ou moins -->
+            <div class="info">
+                <h2>Trouvez le juste prix</h2>
+                <p>Entre: 0 - 100</p>
+            </div>
+            <div class="display">
+                <!-- Ecran du plus ou moins -->
+            </div>
+            <div class="userIn">
+                <label for="user">Trouver le nombre mystère:</label>
+                <input type="text" id="user" name="user" />
+            </div>
+        </div>
+
+        <!-- Juste prix ou plus ou moins version Stylisé-->
+        <div class="justePrix2">
+            <div class="jumbotron">
+                <h2>Le Prix est entre 0 et <span class="prixMax">20</span>.</h2>
+                <h2 class="chrono">30</h2>
+                <h3 class="secondes">Secondes</h3>
+                <h3 class="reponse">Trouvez le Juste Prix !</h3>
+                <form id="paris" role="form">
+                    <input type="text" id="nombreIn" placeholder="Entrez un nombre" autocomplete="off" />
+                    <button type="submit" class="btn">Parier !</button>
+                </form>
+                <button id="commencer">Commencer !</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="jQuery/jQscreen.js"></script>
+    <script type="text/javascript" src="js/shifumi.js"></script>
+    <script type="text/javascript" src="jQuery/shifumi2.js"></script>
+    <script type="text/javascript" src="jQuery/shifumi3.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="jQuery/jqueryJustePrix.js"></script>
+    <script src="jQuery/jqueryJustePrix2.js"></script>
+</body>
+
+</html>

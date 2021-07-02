@@ -1,0 +1,631 @@
+
+.overlay {
+  position: fixed;
+  background: rgba(0,0,155,0.25);
+  min-height: 85%;
+  left: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+.mask {
+  background-color: black;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  animation-name: opa;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+.hG, .hD, .bD, .bG {
+  border: 1px solid rgba(155,55,155,0.45);
+	position: absolute;
+	background: rgba(0,0,155,0.15);
+	width: 50%;
+	height: 50%;
+  z-index: 5;
+}
+
+.hG {
+  top: 0px;
+  left: 0px;
+  animation-name: leftUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+.hD {
+  top: 0px;
+  right: 0px;
+  animation-name: rightUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+.bD {
+  bottom: 0px;
+  right: 0px;
+  animation-name: rightDown;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+.bG {
+  bottom: 0px;
+  left: 0px;
+  animation-name: leftDown;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+
+
+/* animations */
+
+/* Coter Droite */
+/* Pour les anciens navigateurs @-webkit-keyframes avant le nom de l'animation */
+@-webkit-keyframes rightUp {
+  0%  {
+  	top: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    top: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes rightUp {
+ 0%  {
+  	top: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    top: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@-webkit-keyframes rightDown {
+  0%  {
+  	bottom: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    bottom: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes rightDown {
+  0%  {
+  	bottom: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    bottom: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+/* Coter droit v2 */
+@-webkit-keyframes rightUp2 {
+  0% {
+    top: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+  }
+  25% {
+  	top: -10%;
+  	right: -10%;
+  	background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	top: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,255,1);
+  }
+  75% {
+    top: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes rightUp2 {
+   0% {
+    top: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+  }
+  25% {
+  	top: -10%;
+  	right: -10%;
+  	background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	top: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,255,1);
+  }
+  75% {
+    top: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@-webkit-keyframes rightDown2 {
+  0% {
+    bottom: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+  }
+  25% {
+    bottom: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	bottom: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,255,1);
+  }
+  75% {
+    bottom: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes rightDown2 {
+   0% {
+    bottom: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+  }
+  25% {
+    bottom: -10%;
+    right: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	bottom: 0px;
+  	right: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,255,1);
+  }
+  75% {
+    bottom: -10%;
+    right: -10%;
+    opacity: 0.5;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    right: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+/* coter Gauche */
+@-webkit-keyframes leftUp {
+  0%  {
+  	top: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    top: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes leftUp {
+  0%  {
+  	top: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    top: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@-webkit-keyframes leftDown {
+  0%  {
+  	bottom: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    bottom: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes leftDown {
+  0%  {
+  	bottom: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  90% {
+    bottom: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+/* Coter Gauche v2 */
+@-webkit-keyframes leftUp2 {
+  0% {
+    top: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+  }
+  25% {
+    top: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	top: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  75% {
+    top: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes leftUp2 {
+  0% {
+    top: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+  }
+  25% {
+    top: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	top: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  75% {
+    top: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    top: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@-webkit-keyframes leftDown2 {
+  0% {
+    bottom: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+  }
+  25% {
+    bottom: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	bottom: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  75% {
+    bottom: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+@keyframes leftDown2 {
+ 0% {
+    bottom: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(-45deg);
+  }
+  25% {
+    bottom: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  50%  {
+  	bottom: 0px;
+    left: 0px;
+    color: blue;
+    opacity: 0.5;
+    width: 50%;
+	height: 50%;
+	background: rgba(0,0,155,1);
+  }
+  75% {
+    bottom: -10%;
+    left: -10%;
+    background: rgba(0,0,155,0.75);
+  }
+  100% {
+    bottom: -18.5%;
+    left: -18.5%;
+    width: 25%;
+    height: 25%;
+    transform: rotate(45deg);
+    background: rgba(0,0,155,0.15);
+  }
+}
+
+/* Volet montent et descendant */
+
+@-webkit-keyframes opa {
+  0% {
+    background-color: black;
+    width: 100%;
+    opacity: 1;
+  }
+  15% {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+ 40% {
+    background-color: black;
+    width: 100%;
+    opacity: 1;
+  }
+  95% {
+    background-color: black;
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    background-color: black;
+    height: 0%;
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes opa {
+  0% {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  30% {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  40% {
+    background-color: black;
+    width: 100%;
+    opacity: 1;
+  }
+  95% {
+    background-color: black;
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    background-color: black;
+    height: 0%;
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+
