@@ -7,11 +7,11 @@ $(document).ready(function() {
     var s = $('.s').html();
     var startImg = 'images\/pierre-logo_2-300x300.jpg';
     var arrImg = ['images\/shifumi-300x300_pierre.png',
-            'images\/shifumi-300x300_Papier.png',
-            'images\/shifumi-300x300_ciseaux.png',
-            'images\/shifumi-300x300_Lezard.png',
-            'images\/shifumi-300x300_spock.png'
-        ];
+        'images\/shifumi-300x300_Papier.png',
+        'images\/shifumi-300x300_ciseaux.png',
+        'images\/shifumi-300x300_Lezard.png',
+        'images\/shifumi-300x300_spock.png'
+    ];
     var arrRobot = [p,
         f,
         c,
@@ -60,7 +60,7 @@ $(document).ready(function() {
         } else if ((joueur === "Pierre" && robot === "Ciseaux") || (joueur === "Pierre" && robot === "Lézard") || (joueur === "Ciseaux" && robot === "Feuilles") || (joueur === "Ciseaux" && robot === "Lézard") || (joueur === "Feuilles" && robot === "Pierre") || (joueur === "Feuilles" && robot === "Spock")) {
             resultat.text('Vous avez, Gagné !');
         } else if ((joueur === "Spock" && robot === "Ciseaux") || (joueur === "Spock" && robot === "Pierre") || (joueur === "Lézard" && robot === "Feuilles") || (joueur === "Lézard" && robot === "Spock")) {
-            resultat.text('Gagné avec la technique secrète !');
+            resultat.text('Gagné!');
         } else {
             resultat.text('Vous avez, Perdu !');
         }
